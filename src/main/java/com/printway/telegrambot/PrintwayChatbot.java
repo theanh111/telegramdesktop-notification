@@ -31,11 +31,10 @@ public class PrintwayChatbot extends TelegramLongPollingBot {
 
     private String token = "token-here";
     private String username = "printwayioBot";
-    private final String PRODUCT_GROUP_CHAT_ID = "-1001391001050";
-    private final String TECHROOM_GROUP_CHAT_ID = "-1001236402745";
-    private final String TEST_GROUP_CHAT_ID = "-1001300395182";
+    private final String PRODUCT_GROUP_CHAT_ID = "telegram-product-group-chat-id";
+    private final String TECHROOM_GROUP_CHAT_ID = "telegram-techroom-group-chat-id";
+    private final String TEST_GROUP_CHAT_ID = "telegram-test-group-chat-id";
     private String CHAT_ID = TEST_GROUP_CHAT_ID;
-//    private String CHAT_ID = TECHROOM_GROUP_CHAT_ID;
 
     @PostConstruct
     public void registerBot() throws TelegramApiRequestException {
