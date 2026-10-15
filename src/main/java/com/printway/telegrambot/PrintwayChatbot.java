@@ -29,9 +29,7 @@ public class PrintwayChatbot extends TelegramLongPollingBot {
         SendAuto();
     }
 
-    private String token = "1613155455:AAG1WJ3hxXehq9DtX1-hk8MpAc0mYweR5eg";
-//    private String token = "1718882712:AAFeiCrdyZ55TMTSB7xHYVey80V3QlYJNmU";
-//    private String username = "printwayadminbot";
+    private String token = "token-here";
     private String username = "printwayioBot";
     private final String PRODUCT_GROUP_CHAT_ID = "-1001391001050";
     private final String TECHROOM_GROUP_CHAT_ID = "-1001236402745";
@@ -45,10 +43,8 @@ public class PrintwayChatbot extends TelegramLongPollingBot {
         try {
             botsApi.registerBot(this);
         } catch (TelegramApiException e) {
-            token = "1718882712:AAFeiCrdyZ55TMTSB7xHYVey80V3QlYJNmU";
+            token = "token-here";
             username = "printwayadminbot";
-//            token = "1613155455:AAG1WJ3hxXehq9DtX1-hk8MpAc0mYweR5eg";
-//            username = "printwayioBot";
             botsApi.registerBot(this);
             e.printStackTrace();
         }
